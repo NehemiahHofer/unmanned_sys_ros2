@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*- 
 
 
@@ -50,7 +50,7 @@ class OdomLocNode(Node):
 		print("yaw is", np.degrees(self.orientation_euler[2]))
 
 def main():
-	FILEPATH = "/home/justin/ros2/src/unmanned_systems_ros2_pkg/unmanned_systems_ros2_pkg/log/"
+	FILEPATH = "/home/nehemiah/ros2_ws/src/unmanned_sys_ros2"
 	FILENAME = "dumpster_log.csv"
 
 	print(os.getcwd())

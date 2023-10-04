@@ -34,6 +34,7 @@ install(PROGRAMS
   scripts/python_node.py
   scripts/turtlebot_simple.py
   scripts/logger.py
+  scripts/ros2_hw4_node.py
   DESTINATION lib/${PROJECT_NAME}
 )
 ament_package()

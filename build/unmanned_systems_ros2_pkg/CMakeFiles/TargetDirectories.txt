@@ -1,0 +1,12 @@
+/home/nehemiah/ros2_ws/src/unmanned_sys_ros2/build/unmanned_systems_ros2_pkg/CMakeFiles/uninstall.dir
+/home/nehemiah/ros2_ws/src/unmanned_sys_ros2/build/unmanned_systems_ros2_pkg/CMakeFiles/unmanned_systems_ros2_pkg_uninstall.dir
+/home/nehemiah/ros2_ws/src/unmanned_sys_ros2/build/unmanned_systems_ros2_pkg/CMakeFiles/cpp_node.dir
+/home/nehemiah/ros2_ws/src/unmanned_sys_ros2/build/unmanned_systems_ros2_pkg/CMakeFiles/ament_cmake_python_symlink_unmanned_systems_ros2_pkg.dir
+/home/nehemiah/ros2_ws/src/unmanned_sys_ros2/build/unmanned_systems_ros2_pkg/CMakeFiles/ament_cmake_python_build_unmanned_systems_ros2_pkg_egg.dir
+/home/nehemiah/ros2_ws/src/unmanned_sys_ros2/build/unmanned_systems_ros2_pkg/CMakeFiles/test.dir
+/home/nehemiah/ros2_ws/src/unmanned_sys_ros2/build/unmanned_systems_ros2_pkg/CMakeFiles/edit_cache.dir
+/home/nehemiah/ros2_ws/src/unmanned_sys_ros2/build/unmanned_systems_ros2_pkg/CMakeFiles/rebuild_cache.dir
+/home/nehemiah/ros2_ws/src/unmanned_sys_ros2/build/unmanned_systems_ros2_pkg/CMakeFiles/list_install_components.dir
+/home/nehemiah/ros2_ws/src/unmanned_sys_ros2/build/unmanned_systems_ros2_pkg/CMakeFiles/install.dir
+/home/nehemiah/ros2_ws/src/unmanned_sys_ros2/build/unmanned_systems_ros2_pkg/CMakeFiles/install/local.dir
+/home/nehemiah/ros2_ws/src/unmanned_sys_ros2/build/unmanned_systems_ros2_pkg/CMakeFiles/install/strip.dir
