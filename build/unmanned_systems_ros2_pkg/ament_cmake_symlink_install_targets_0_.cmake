@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/nehemiah/ros2_ws/src/unmanned_sys_ros2/build/unmanned_systems_ros2_pkg/cpp_node" "TARGETS" "cpp_node" "DESTINATION" "lib/unmanned_systems_ros2_pkg")
