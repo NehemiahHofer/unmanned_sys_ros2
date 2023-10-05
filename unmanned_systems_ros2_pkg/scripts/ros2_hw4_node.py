@@ -90,13 +90,25 @@ def main()->None:
     turtlebot_node = TurtleBotNode(namespace)
     rate = turtlebot_node.create_rate(rate_val)
     
+    
     des_x_position = 7.0
-    cmd_vel = 1.5
-    ang_vel = 0.5
+    cmd_vel1 = 1.5
+    ang_vel1 = 0.0
+
+    cmd_vel2 = 0.0
+    ang_vel2 = -0.15
+
+    cmd_vel3 = 1.5
+    ang_vel3 = 0.0
     
     stop_vel = 0.0
     
-    time_duration = 5
+    time_duration0 = 0
+    time_duration1 = 5
+    time_duration2 = 7
+    time_duration3 = 12
+    
+
     time_now = get_time_in_secs(turtlebot_node)
     print("time now is", time_now)
     
@@ -104,8 +116,15 @@ def main()->None:
         
         time_diff = get_time_in_secs(turtlebot_node) - time_now 
         
-        if (time_diff <= time_duration):
-            turtlebot_node.move_turtle(cmd_vel, ang_vel)
+        if (time_diff >= time_duration0 and time_diff <= time_duration1 ):
+            turtlebot_node.move_turtle(cmd_vel1, ang_vel1)
+            #turtlebot_node.move_turtle(stop_vel, 0.0)
+        elif (time_diff >= time_duration1 and time_diff <= time_duration2):
+            turtlebot_node.move_turtle(cmd_vel2, ang_vel2)
+            #turtlebot_node.move_turtle(stop_vel, 0.0)
+        elif (time_diff >= time_duration2 and time_diff <= time_duration3):
+            turtlebot_node.move_turtle(cmd_vel3, ang_vel3)
+            #turtlebot_node.move_turtle(stop_vel, 0.0)
         else:
             turtlebot_node.move_turtle(stop_vel, 0.0)
 

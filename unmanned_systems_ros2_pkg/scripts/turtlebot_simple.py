@@ -91,7 +91,7 @@ def main()->None:
     rate = turtlebot_node.create_rate(rate_val)
     
     des_x_position = 7.0
-    cmd_vel = 0.0
+    cmd_vel = 5.0
     ang_vel = 0.5
     
     stop_vel = 0.0
