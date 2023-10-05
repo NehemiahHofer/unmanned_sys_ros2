@@ -13,7 +13,7 @@ import os
 import datetime
 
 from nav_msgs.msg import Odometry
-from geometry_msgs.msg import Twist  # Import Twist message for velocity
+from geometry_msgs.msg import Twist  
 
 from unmanned_systems_ros2_pkg import quaternion_tools
 
@@ -27,12 +27,12 @@ class OdomLocNode(Node):
         super().__init__('logger_node')
         self.current_position = [None, None]
         self.orientation_euler = [None, None, None]
-        self.linear_velocity = None  # Store linear velocity
-        self.angular_velocity = None  # Store angular velocity
+        self.linear_velocity = None  
+        self.angular_velocity = None  
         self.odom_subscriber = self.create_subscription(
             Odometry, sub_topic, self.odom_callback, 10)
         self.vel_subscriber = self.create_subscription(
-            Twist, vel_topic, self.vel_callback, 10)  # Subscribe to velocity topic
+            Twist, vel_topic, self.vel_callback, 10)  
 
     def odom_callback(self, msg):
         """subscribe to odometry"""
@@ -54,8 +54,8 @@ class OdomLocNode(Node):
 
     def vel_callback(self, msg):
         """subscribe to velocity data"""
-        self.linear_velocity = msg.linear.x  # Store linear velocity
-        self.angular_velocity = msg.angular.z  # Store angular velocity
+        self.linear_velocity = msg.linear.x  
+        self.angular_velocity = msg.angular.z 
 
 
 def main():
@@ -64,7 +64,7 @@ def main():
 
     print(os.getcwd())
     rclpy.init(args=None)
-    odom_node = OdomLocNode("odom", "cmd_vel")  # Add the topic for velocity
+    odom_node = OdomLocNode("odom", "cmd_vel")  
 
     # ---------Logfile Setup-------------#
     # populate the data header, these are just strings, you can name them anything
